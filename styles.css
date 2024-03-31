@@ -1,0 +1,162 @@
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px */
+
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(231, 7%, 60%);
+    --charcoal-grey:  hsl(235, 18%, 26%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --font: "Roboto", sans-serif; /*  Weights: 400, 700 */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    
+}
+
+html {
+    margin: 0 auto;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    background-color: var(--charcoal-grey);
+    margin-top: 3.5em;
+}
+
+.container {
+    display: flex;
+    background-color: var(--white);
+   
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.container__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    align-items: start;
+    width: 100%;
+}
+
+.container__input {
+    display: flex;
+    align-items: start;
+    padding: 2em 0 0 2em;
+    width: 50%;
+
+}
+
+.container__image {
+    width: 50%;
+    padding: 2em 0;
+}
+
+.container__form h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5em;
+    width: 100%;
+}
+
+.container__form h4 {
+    padding: 1em 0;
+    font-size: 16px;
+    font-weight: 400;
+    width: 95%;
+}
+
+.container__form .label__list {
+   display: flex;
+   align-items: start;
+   gap: 10px;
+   margin-bottom: 10px;
+}
+
+.container__form .label__email {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 10px;
+
+}
+
+.container__form .email {
+    padding: 1.5em ;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid var(--grey) ;
+    margin-bottom: 24px;
+}
+
+.container__form .email::placeholder {
+    color: var(--grey);
+
+}
+
+.container__form button {
+    padding: 1.5em 0;
+    width: 80%;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    border-radius: 10px;
+    border: none;
+}
+
+.container__form button:hover {
+    background-color: var(--tomato);
+    cursor: pointer;
+}
+
+
+
+.alert-success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 70vh;
+    gap: 20px;
+}
+
+.alert-success h1 {
+    font-size: 42px;
+}
+
+.alert-success img {
+    width: 50px;
+}
+
+.alert-success p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+.alert-success button {
+    padding: 1.5em 0;
+    width: 90%;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    border-radius: 10px;
+    border: none;
+}
+
+.alert-success button:hover {
+    background-color: var(--tomato);
+    cursor: pointer;
+}
+
